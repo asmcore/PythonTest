@@ -6,3 +6,4 @@ with os.scandir('lessons') as d:
         if os.path.isdir(dd):
            dr.append(dd.name) 
 print(dr)
+input()
