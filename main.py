@@ -20,6 +20,6 @@ for i in range(len(less)):
             string[j] = x_str[j]
         print('  '+ lib.to_string(string)+' - error')
         break
-print('*'*50)
+print('*'*45)
 input()
 os.system('clear')
