@@ -5,11 +5,11 @@ lib.display()
 dir = lib.directory()
 for i in dir:
     print(i)
-    less = lib.open_file('lessons/less01/less-01.txt')
+less = lib.open_file('lessons/less01/less-01.txt')
 lib.show_less(less)
 for i in range(len(less)):
     string = lib.to_list(less[i])
-    x_str=input('  ')
+    x_str=lib.to_list(input('  '))
     if len(x_str)!=len(string):
         print('error len >')
         break

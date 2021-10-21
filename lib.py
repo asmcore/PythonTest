@@ -7,7 +7,6 @@ def display():
     print()
 
 def is_ok(a1:list, a2:list)->bool:
-    flag = bool
     for i in range(len(a1)):
         if a1[i] != a2[i]:
             return False
@@ -17,7 +16,6 @@ def to_list(s:str)->list:
     a = []
     for i in range(len(s)):
         a.append(s[i])
-
     return a
 
 def to_string(l:list)->str:
@@ -33,7 +31,7 @@ def file_line_strip(a:list)->list:
         a[i] = a[i].rstrip()
     return a
 
-def line(less:list)->str:
+def line(less:list)->None:
     print('+'+'-'*(len(less[0])+2)+'+')
 
 def show_less(less:list)->None:
