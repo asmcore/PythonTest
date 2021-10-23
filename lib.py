@@ -69,16 +69,13 @@ def directory()->list:
 
 def files(dic:list)->dict:
     dict = {} 
-    files = []
     for i in range(len(dic)):
         file=[]
         with os.scandir(PATH_LESS+'/'+dic[i]) as fl:
             for j in fl:
                 if os.path.isfile(j):
                     file.append(j.name)
-        files.append(file)
-        dict.update({dic[i]:files[i]})
-    print(files)
+        dict.update({dic[i]:file})
     return dict
 
 dic = directory()
