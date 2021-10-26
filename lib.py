@@ -4,6 +4,7 @@ import shutil
 PATH_LESS = 'lessons'
 
 def line_display():
+    #...
     c = shutil.get_terminal_size()
     return c[0]
 
@@ -23,14 +24,10 @@ def is_ok(a1:list, a2:list)->bool:
     return True
 
 def to_list(s:str)->list:
-    a = []
-    for i in range(len(s)):
-        a.append(s[i])
-    return a
+    return [s for s in range(len(s))]
 
 def to_string(l:list)->str:
-    s =''
-    return s.join(l)
+    return ''.join(l)
 
 def open_file(s:str)->list:
     with open(s,'r') as f:
